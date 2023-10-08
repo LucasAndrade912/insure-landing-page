@@ -1,0 +1,30 @@
+.light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark {
+  border-color: var(--very-dark-violet);
+}
+
+.dark:hover {
+  background-color: var(--very-dark-violet);
+  color: #fff;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid;
+  padding: 10px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
