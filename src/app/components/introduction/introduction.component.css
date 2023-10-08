@@ -1,0 +1,56 @@
+section {
+  position: relative;
+  background-color: var(--dark-violet);
+  color: #fff;
+  width: 100vw;
+  left: -10rem;
+  padding: 7.5rem 10rem;
+}
+
+section div {
+  width: 45%;
+}
+
+h2 {
+  position: relative;
+  font-family: "DM Serif Display", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -5rem;
+  width: 9.25rem;
+  height: 1px;
+  background-color: #fff;
+}
+
+p {
+  line-height: 1.625;
+  margin-bottom: 2rem;
+}
+
+img {
+  position: absolute;
+}
+
+img.peoples {
+  top: 7.5rem;
+  right: 10rem;
+}
+
+img.icon-right {
+  top: 0;
+  right: 0;
+}
+
+img.icon-left {
+  bottom: -21rem;
+  left: 0;
+}
