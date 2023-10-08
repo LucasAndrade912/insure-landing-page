@@ -3,7 +3,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -14,6 +15,12 @@ body {
   font-weight: 400;
   padding: 0 10rem;
   overflow-x: hidden;
+}
+
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 
 :root {
