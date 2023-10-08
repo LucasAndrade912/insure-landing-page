@@ -3,11 +3,16 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  width: 100%;
+  font-family: "Karla", sans-serif;
   font-weight: 400;
+  padding: 0 10rem;
 }
 
 :root {

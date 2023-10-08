@@ -1,0 +1,41 @@
+header {
+  padding: 1.75rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.75rem;
+}
+
+li, button {
+  text-transform: uppercase;
+}
+
+li a {
+  color: var(--dark-grayish-violet);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: var(--very-dark-violet);
+}
+
+li button {
+  background-color: transparent;
+  border: 2px solid var(--very-dark-violet);
+  padding: 10px 24px;
+  font-weight: 700;
+}
+
+li button:hover {
+  background-color: var(--very-dark-violet);
+  color: #fff;
+  cursor: pointer;
+}
