@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ButtonComponent } from './components/button/button.component';
 import { DifferencesComponent } from './components/differences/differences.component';
+import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DifferencesComponent } from './components/differences/differences.compo
     HeaderComponent,
     IntroductionComponent,
     ButtonComponent,
-    DifferencesComponent
+    DifferencesComponent,
+    HowWeWorkComponent
   ],
   imports: [
     BrowserModule
