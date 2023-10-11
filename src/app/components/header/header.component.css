@@ -1,4 +1,5 @@
 header {
+  position: relative;
   padding: 1.75rem 0;
   width: 100%;
   display: flex;
@@ -25,4 +26,80 @@ li a {
 
 li a:hover {
   color: var(--very-dark-violet);
+}
+
+li button {
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+  border: 2px solid var(--very-dark-violet);
+  padding: 10px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+li button:hover {
+  cursor: pointer;
+  background-color: var(--very-dark-violet);
+  color: #fff;
+}
+
+input[type="checkbox"],
+label {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  label {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 10;
+    top: 88px;
+    left: -1000px;
+    width: 100vw;
+    height: calc(100vh - 88px);
+    padding: 0 24px;
+    padding-top: 32px;
+    background-color: var(--very-dark-violet);
+    transition: left 450ms ease-out;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  nav img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  input[type="checkbox"]:checked + nav {
+    left: 0;
+  }
+
+  li,
+  button {
+    width: 100%;
+  }
+
+  li a {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  li button {
+    border-color: #fff;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 18px;
+  }
 }

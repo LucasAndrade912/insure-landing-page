@@ -3,6 +3,8 @@
     <img src="../../../assets/logo.svg" alt="Insure Logo" />
   </a>
 
+  <input type="checkbox" id="toggle-menu" (change)="toggleTypeButton()" />
+
   <nav>
     <ul>
       <li>
@@ -15,8 +17,21 @@
         <a href="#">Account</a>
       </li>
       <li>
-        <app-button [text]="buttonContent"></app-button>
+        <button>View plans</button>
       </li>
     </ul>
+
+    <img src="../../../assets/bg-pattern-mobile-nav.svg" />
   </nav>
+
+  <label for="toggle-menu">
+    <img
+      *ngIf="showCloseButtonMenu; else menuHamburguer"
+      src="../../../assets/icon-close.svg"
+    />
+
+    <ng-template #menuHamburguer>
+      <img src="../../../assets/icon-hamburger.svg" />
+    </ng-template>
+  </label>
 </header>

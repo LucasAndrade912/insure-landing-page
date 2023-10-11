@@ -30,3 +30,9 @@ h3 {
   --dark-grayish-violet: #837d87;
   --very-light-gray: #fafafa;
 }
+
+@media (max-width: 425px) {
+  body {
+    padding: 0 24px;
+  }
+}
