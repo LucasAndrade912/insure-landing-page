@@ -11,11 +11,15 @@ ul {
   list-style: none;
 }
 
-.bg-pattern {
+.bg-pattern-desktop {
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
+}
+
+.bg-pattern-mobile {
+  display: none;
 }
 
 footer .social-medias {
@@ -36,8 +40,8 @@ svg:hover path {
 }
 
 .underline {
-  margin-top: 28px;
-  margin-bottom: 40px;
+  margin-top: 1.75rem;
+  margin-bottom: 2.5rem;
   width: 100%;
   border-top: 1px solid var(--dark-grayish-violet);
 }
@@ -62,7 +66,7 @@ footer .info {
 footer .info .container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 footer .info .container h4 {
@@ -73,5 +77,46 @@ footer .info .container h4 {
 footer .info .container ul {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
+}
+
+@media (max-width: 425px) {
+  footer {
+    text-align: center;
+    left: -24px;
+    padding: 4rem 0 7.5rem;
+  }
+
+  footer .social-medias {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .underline {
+    width: calc(100vw - 3rem);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bg-pattern-desktop {
+    display: none;
+  }
+
+  .bg-pattern-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
