@@ -9,6 +9,7 @@ section {
 
 section div {
   width: 45%;
+  position: relative;
 }
 
 h2 {
@@ -51,4 +52,63 @@ img.icon-right {
 img.icon-left {
   bottom: -21rem;
   left: 0;
+}
+
+img.icon-right-mobile, img.icon-left-mobile {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+    left: -24px;
+    padding: 0;
+    padding-bottom: 5rem;
+    position: relative;
+  }
+
+  section div {
+    width: 100%;
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  h2 {
+    position: relative;
+    z-index: 10;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  h2::before {
+    display: none;
+  }
+
+  img.peoples {
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  img.icon-right, img.icon-left {
+    display: none;
+  }
+
+  img.icon-right-mobile, img.icon-left-mobile {
+    display: block;
+    position: absolute;
+  }
+
+  img.icon-right-mobile {
+    bottom: -256px;
+    right: 0;
+  }
+
+  img.icon-left-mobile {
+    top: 0;
+    left: 0;
+  }
 }
