@@ -22,8 +22,36 @@ img {
   right: 0;
 }
 
+img.pattern-mobile {
+  display: none;
+}
+
 @media (max-width: 1366px) {
   h3 {
     width: 60%;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    flex-direction: column;
+    padding: 64px 40px;
+    gap: 40px;
+  }
+
+  h3 {
+    position: relative;
+    z-index: 10;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  img.pattern-desktop {
+    display: none;
+  }
+
+  img.pattern-mobile {
+    display: block;
   }
 }
