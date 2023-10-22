@@ -33,7 +33,7 @@ li button {
   z-index: 10;
   background-color: transparent;
   border: 2px solid var(--very-dark-violet);
-  padding: 10px 24px;
+  padding: 0.625rem 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -52,19 +52,19 @@ label {
 @media (max-width: 425px) {
   label {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
   }
 
   nav {
     position: fixed;
     z-index: 10;
-    top: 88px;
-    left: -1000px;
+    top: 5.5rem;
+    left: -62.5rem;
     width: 100vw;
-    height: calc(100vh - 88px);
-    padding: 0 24px;
-    padding-top: 32px;
+    height: calc(100vh - 5.5rem);
+    padding: 0 1.5rem;
+    padding-top: 2rem;
     background-color: var(--very-dark-violet);
     transition: left 450ms ease-out;
   }
@@ -72,7 +72,7 @@ label {
   nav ul {
     flex-direction: column;
     text-align: center;
-    gap: 32px;
+    gap: 2rem;
   }
 
   nav img {
@@ -93,13 +93,13 @@ label {
 
   li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   li button {
     border-color: #fff;
     color: #fff;
-    padding: 14px 32px;
-    font-size: 18px;
+    padding: 0.875rem 2rem;
+    font-size: 1.125rem;
   }
 }

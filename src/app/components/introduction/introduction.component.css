@@ -54,7 +54,8 @@ img.icon-left {
   left: 0;
 }
 
-img.icon-right-mobile, img.icon-left-mobile {
+img.icon-right-mobile,
+img.icon-left-mobile {
   display: none;
 }
 
@@ -62,7 +63,7 @@ img.icon-right-mobile, img.icon-left-mobile {
   section {
     display: flex;
     flex-direction: column-reverse;
-    left: -24px;
+    left: -1.5rem;
     padding: 0;
     padding-bottom: 5rem;
     position: relative;
@@ -71,14 +72,14 @@ img.icon-right-mobile, img.icon-left-mobile {
   section div {
     width: 100%;
     text-align: center;
-    padding: 0 24px;
+    padding: 0 1.5rem;
   }
 
   h2 {
     position: relative;
     z-index: 10;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   h2::before {
@@ -93,17 +94,19 @@ img.icon-right-mobile, img.icon-left-mobile {
     right: 0;
   }
 
-  img.icon-right, img.icon-left {
+  img.icon-right,
+  img.icon-left {
     display: none;
   }
 
-  img.icon-right-mobile, img.icon-left-mobile {
+  img.icon-right-mobile,
+  img.icon-left-mobile {
     display: block;
     position: absolute;
   }
 
   img.icon-right-mobile {
-    bottom: -256px;
+    bottom: -16rem;
     right: 0;
   }
 

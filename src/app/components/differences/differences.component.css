@@ -1,4 +1,5 @@
-h2, h3 {
+h2,
+h3 {
   color: var(--very-dark-violet);
 }
 
@@ -45,12 +46,12 @@ div.container span {
 
 @media (max-width: 425px) {
   section {
-    margin-top: 216px;
+    margin-top: 13.5rem;
     text-align: center;
   }
 
   section h2 {
-    font-size: 48px;
+    font-size: 3rem;
     margin-top: 0;
   }
 
@@ -58,7 +59,7 @@ div.container span {
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: -56px;
+    top: -3.5rem;
   }
 
   section div.differences {
