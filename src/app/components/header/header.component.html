@@ -1,6 +1,6 @@
 <header>
   <a href="/">
-    <img src="../../../assets/logo.svg" alt="Insure Logo" />
+    <img src="/assets/logo.svg" alt="Insure Logo" />
   </a>
 
   <input type="checkbox" id="toggle-menu" (change)="toggleTypeButton()" />
@@ -20,18 +20,16 @@
         <button>View plans</button>
       </li>
     </ul>
-
-    <img src="../../../assets/bg-pattern-mobile-nav.svg" />
   </nav>
 
   <label for="toggle-menu">
     <img
       *ngIf="showCloseButtonMenu; else menuHamburguer"
-      src="../../../assets/icon-close.svg"
+      src="/assets/icon-close.svg"
     />
 
     <ng-template #menuHamburguer>
-      <img src="../../../assets/icon-hamburger.svg" />
+      <img src="/assets/icon-hamburger.svg" />
     </ng-template>
   </label>
 </header>
